@@ -42,6 +42,24 @@ Methods & Tools
 TBD
 
 ---
+
+Limitations & Next Steps
+
+The current analysis is based on secondary survey data, which limits control over what variables were collected.  
+As a result, the model may be affected by **omitted variable bias** — certain relevant factors (e.g., workplace culture, job autonomy, personal expectations) are not included in the dataset and cannot be added retroactively.  
+
+The current regression model likely suffers from Omitted Variable Bias (OVB). Several potential predictors were explored (including ANOVA and feature importance checks), but some influences likely remain unobserved.  
+These constraints are typical when working with real-world survey data and should be considered when interpreting the results.
+
+Next steps focus on:
+- Refining existing variables and model specification  
+- Improving interpretability and communication of findings  
+- Documenting assumptions and uncertainty transparently  
+
+These limitations do not invalidate the results, but outline their **scope and reliability**.
+
+---
+
 Key Insights
 
 TBD
