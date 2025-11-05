@@ -1,0 +1,911 @@
+Variable,Description
+id,Unikalny identyfikator respondenta w bazie łączonej
+intid,ID wywiadu
+waga_proba,Waga próby bez korekty przypadków ekstremalnych (skorygowana 2018)
+waga_proba_kor,Waga próby z korektą przypadków ekstremalnych (skorygowana 2018)
+waga_pop,Waga populacyjna bez korekty przypadków ekstremalnych (skorygowana 2018)
+waga_pop_kor,Waga populacyjna z korektą przypadków ekstremalnych (skorygowana 2018)
+rodzaj,Technika badania
+edycja,Edycja badania
+rok,BKL - rok badania
+datawyw,Data wywiadu
+powiat,Powiat (symbol terytorialny TERC)
+woj,Województwo (symbol terytorialny TERC)
+region,Makroregion wg klasyfikacji NUTS 1
+miejsce,Miejsce zamieszkania respondenta
+miejsce_4k,Miejsce zamieszkania respondenta
+powiat_operat,Powiat (symbol terytorialny TERC) wg operatu
+woj_operat,Województwo wg operatu
+region_operat,Makroregion wg klasyfikacji NUTS 1 wg operatu
+miejsce_operat,Miejsce zamieszkania respondenta wg operatu
+m1,Rok urodzenia respondenta
+wiek,Wiek
+wiek_10k,Wiek
+wiek_6k,Wiek
+wiek_4k,Wiek respondenta (w przedziałach) - warstwy użyte w ważeniu
+wiek_3k,Wiek
+m2,Płeć respondenta
+prace,"Formy pracy (które bloki wypełnione: P,Q,E,F,EE,U,N,X,C)"
+praceteraz,"Formy pracy wykonywanej aktualnie (bloki P,E,EE,U,N,X,C)"
+BAEL_bezro,Bezrobotni (BAEL)
+BAEL_praca,Pracujący (BAEL)
+BAEL_aktyw,Aktywni zawodowo (BAEL)
+BAEL_sytzaw,Sytuacja zawodowa (BAEL)
+BAEL_sytzaw2,"Sytuacja zawodowa (BAEL), uwzgl. pracę nieformalną"
+bezrej,Bezrobocie rejestrowane
+wykszt,Wykształcenie ukończone
+wykszt_7k,Wykształcenie ukończone (6 kat)
+wykszt_4k,Wykształcenie ukończone (4 kat)
+wykszt_3k,Wykształcenie ukończone (3 kat)
+matura,Ma maturę
+wyzsze,Ukończone wykształcenie wyższe
+najwyzsze,Wyższe: najwyższy ukończony poziom
+uczy,Uczestniczy w kształceniu formalnym
+uczy_gdzie,Gdzie się uczy?
+p1,Prowadzi samodzielną działalność gosp./roln.
+p1_typ,Typ działalności
+p1_nrol,Prowadzi pozarolniczą działalność gospodarczą
+p1_rol,Prowadzi rolniczą działalność gospodarczą
+p2_pkd1,Branża 1 (PKD)
+p2_pkd2,Branża 2 (PKD)
+p2_pkd3,Branża 3 (PKD)
+p2_pkd4,Branża 4 (PKD)
+p2_pkd5,Branża 5 (PKD)
+p2_1,Branża główna (PKD)
+p2_pkd_21k,Główna branża działalności (PKD/21kat)
+p2_pkd_6k,Główna branża działalności (PKD/6kat)
+p2_pkd_4k,Główna branża działalności (PKD/4kat)
+p3_isco,Działalność gosp./roln. - kat. zawod. ISCO
+p3_isco_d,Działalność gosp./roln. - kat. zawod. ISCO
+p3_1,Praca zgodna z wykształceniem
+p3_2,Na ile przydatne w pracy wiedza i umiejętności ze szkół
+p4,Rok rozpoczęcia działalności
+p5,Od kogo pochodzą przychody z działalności
+p6,Zatrudnia kogoś na stałe (dowolny rodzaj umowy)
+p6_1,Ile osób zatrudnia
+p6_1x,Ile osób zatrudnia
+p7_1,"Aby osiągnąć rezultaty, pracownicy muszą być zmotywowani pieniędzmi lub zagrożeni"
+p7_2,"Mogę wyznaczyć pracownikom cel do realizacji, pozostawić wolną rękę i zaufać, że dobrze wykonają swoją pracę"
+p7_3,Większość pracowników lubi swoją pracę
+p7_4,"Gdyby nie ciągły nadzór, pracownicy obijaliby się w pracy"
+p8,"Na ile odpowiada praca, biorąc wszystko pod uwagę: samą pracę, jej warunki i zarobki"
+p9,Przez najbliższe 12m zamierza kontynuować działalność
+p9_1,"Myśli, że w najbliższych 12m zatrudnienie w firmie…"
+p9_1x,W najbliższych 12m zatrudnienie w firmie wzrośnie
+hp9_1_1,Zmiana zatrudnienia będzie miała związek z epidemią koronawirusa...
+p9_2,Obroty firmy…
+p9_2x,W najbliższych 12m obroty firmy wzrosną
+hp9_2_1,Zmiana obrotów będzie miała związek z epidemią koronawirusa...
+p10a_00,Powody spodziew. zakończ. dz. - ograniczenia związane z koronawirusem
+p10a_01,Powody spodziew. zakończ. dz. - brak chęci do prowadzenia działalności
+p10a_02,Powody spodziew. zakończ. dz. - zła sytuacja finansowa firmy
+p10a_03,Powody spodziew. zakończ. dz. - uciążliwe przepisy prawne
+p10a_04,Powody spodziew. zakończ. dz. - ograniczona dostępność kredytu
+p10a_05,Powody spodziew. zakończ. dz. - brak odpowiednich pracowników
+p10a_06,Powody spodziew. zakończ. dz. - zbyt duże obciążenia podatkowe
+p10a_07,Powody spodziew. zakończ. dz. - zbyt duża konkurencja
+p10a_08,Powody spodziew. zakończ. dz. - konieczność opieki nad dzieckiem/członkiem rodziny
+p10a_09,Powody spodziew. zakończ. dz. - sytuacja rodzinna
+p10a_10,Powody spodziew. zakończ. dz. - przejście na emeryturę
+p10a_11,Powody spodziew. zakończ. dz. - stan zdrowia
+p10a_12,Powody spodziew. zakończ. dz. - wiek
+p10a_13,Powody spodziew. zakończ. dz. - brak odpowiednich certyfikatów i uprawnień
+p10a_14,Powody spodziew. zakończ. dz. - niedostateczne doświadczenie
+p10a_15,Powody spodziew. zakończ. dz. - inny powód
+p10a_15i,Powody spodziewanego zakończenia działalności (inne)
+p10a_naj,Najważniejszy powód spodziewanego zakończenia działalności
+p10b_00,Gł. utrudn. w działalności - ograniczenia związane z koronawirusem
+p10b_01,Gł. utrudn. w działalności - brak chęci do prowadzenia działalności
+p10b_02,Gł. utrudn. w działalności - zła sytuacja finansowa firmy
+p10b_03,Gł. utrudn. w działalności - uciążliwe przepisy prawne
+p10b_04,Gł. utrudn. w działalności - ograniczona dostępność kredytu
+p10b_05,Gł. utrudn. w działalności - brak odpowiednich pracowników
+p10b_06,Gł. utrudn. w działalności - zbyt duże obciążenia podatkowe
+p10b_07,Gł. utrudn. w działalności - zbyt duża konkurencja
+p10b_08,Gł. utrudn. w działalności - konieczność opieki nad dzieckiem/członkiem rodziny
+p10b_09,Gł. utrudn. w działalności - sytuacja rodzinna
+p10b_10,Gł. utrudn. w działalności - przejście na emeryturę
+p10b_11,Gł. utrudn. w działalności - stan zdrowia
+p10b_12,Gł. utrudn. w działalności - wiek
+p10b_13,Gł. utrudn. w działalności - brak odpowiednich certyfikatów i uprawnień
+p10b_14,Gł. utrudn. w działalności - niedostateczne doświadczenie
+p10b_15,Gł. utrudn. w działalności - inny powód
+p10b_15i,Główne utrudnienia w działalności (inne)
+p10b_naj,Najcięższe utrudnienie w działalności
+p11,Byłby w stanie prowadzić tę samą działalność w wieku powyżej 60 lat
+p12,Ile czasu poświęcał na działalność rok temu
+p13,Zatrudnienie w firmie w minionych 12m …
+hp13_1,Zmiana zatrudnienia miała związek z epidemią koronawirusa...
+p14,W minionych 12m obroty firmy…
+hp14_1,Zmiana obrotów miała związek z epidemią koronawirusa...
+q1,W przeszłości prowadził działalność gosp./roln.
+q2_pkd,Branża główna
+q3_isco,Poprzednia dz. - kat. zawod. ISCO
+q4,Praca zgodna z wykształceniem
+q5,Na ile przydatne w pracy wiedza i umiejętności ze szkół
+q6,Rok zakończenia działalności
+q7,Rok rozpoczęcia działalności
+q8_00,Powody rezygnacji - ograniczenia związane z koronawirusem
+q8_01,Powody rezygnacji - brak chęci do prowadzenia działalności
+q8_02,Powody rezygnacji - zła sytuacja finansowa firmy
+q8_03,Powody rezygnacji - uciążliwe przepisy prawne
+q8_04,Powody rezygnacji - ograniczona dostępność kredytu
+q8_05,Powody rezygnacji - brak odpowiednich pracowników
+q8_06,Powody rezygnacji - zbyt duże obciążenia podatkowe
+q8_07,Powody rezygnacji - zbyt duża konkurencja
+q8_08,Powody rezygnacji - konieczność opieki nad dzieckiem/członkiem rodziny
+q8_09,Powody rezygnacji - sytuacja rodzinna
+q8_10,Powody rezygnacji - przejście na emeryturę
+q8_11,Powody rezygnacji - stan zdrowia
+q8_12,Powody rezygnacji - wiek
+q8_13,Powody rezygnacji - brak odpowiednich certyfikatów i uprawnień
+q8_14,Powody rezygnacji - niedostateczne doświadczenie
+q8_15,Powody rezygnacji - inny powód
+q8_15i,Powody rezygnacji z działalności (inne)
+q8_naj,Najważniejszy powód zakończenia działalności
+q9,"Ile łącznie lat prowadził jakąkolwiek działalność gosp., nie licząc przerw"
+e1,Obecnie zatrudniony na podstawie umowy o pracę
+e1_3m,Wykonywał pracę w ostatnich 3 mies.
+e1_1,Umowa na czas określony
+e1_1x,"Umowa na czas określony [NDT,odmowa=0]"
+e2,Zarejestrowany w Powiatowym Urzędzie Pracy jako bezrobotny
+e2_1,Od ilu miesięcy zarejestrowany jako bezrobotny
+e2_2,Otrzymuje zasiłek dla bezrobotnych
+e3,Rok zatrudnienia u obecnego pracodawcy na podstawie umowy o pracę.
+e4,"Wcześniej zatrudniony u obecnego pracodawcy w innej formie, np. umów cyw.-pr."
+e5_01,Jak dowiedział się o tej pracy - pracodawca lub agencja rekrutacyjna sami się zgłosili
+e5_02,Jak dowiedział się o tej pracy - szukał informacji lub ogłoszenia o pracę w internecie
+e5_03,Jak dowiedział się o tej pracy - szukał ogłoszenia o pracę w prasie
+e5_04,Jak dowiedział się o tej pracy - poprzez rekrutację prowadzoną wewnątrz firmy
+e5_05,Jak dowiedział się o tej pracy - bezpośredni kontakt z wybranym pracodawcą (np. rozmowa lub wysłanie CV)
+e5_06,Jak dowiedział się o tej pracy - przez rodzinę lub znajomych
+e5_07,Jak dowiedział się o tej pracy - przez Urząd Pracy
+e5_08,Jak dowiedział się o tej pracy - na targach pracy
+e5_09,"Jak dowiedział się o tej pracy - przez prywatne biuro pośrednictwa pracy, agencję rekrutacyjną"
+e5_10,Jak dowiedział się o tej pracy - przez szkołę lub uczelnię
+e5_11,Jak dowiedział się o tej pracy - w inny sposób
+e5_1_1,Jak firma/agencja rekrut. dotarła do Resp. - polecenie pracowników firmy lub innych osób
+e5_1_2,"Jak firma/agencja rekrut. dotarła do Resp. - strona z ogłoszeniami o pracę, np. pracuj.pl"
+e5_1_3,Jak firma/agencja rekrut. dotarła do Resp. - facebook
+e5_1_4,"Jak firma/agencja rekrut. dotarła do Resp. - portale społecznościowe związane z karierą, np. LinkedIn lub Goldenline"
+e5_1_5,Jak firma/agencja rekrut. dotarła do Resp. - osobista strona www
+e5_1_6,Jak firma/agencja rekrut. dotarła do Resp. - w inny sposób
+e5_2_0,"Na jakich stronach szukał - strona www Urzędu Pracy, Biuletyn Informacji Publicznej"
+e5_2_1,"Na jakich stronach szukał - strona z ogłoszeniami o pracę (pracuj.pl, strona UP, BIP, itp.)"
+e5_2_2,Na jakich stronach szukał - facebook
+e5_2_3,"Na jakich stronach szukał - portale społecznościowe związane z karierą, np. LinkedIn lub Goldenline"
+e5_2_4,Na jakich stronach szukał - strona www pracodawcy
+e5_2_5,Na jakich stronach szukał - strona www innego rodzaju
+e6,Forma własności zakładu pracy
+e7,Typ placówki
+e8,Ile osób pracuje na stałe w zakładzie pracy (uwzgl. wszystkie oddziały i placówki)
+e9,W ciągu ostatnich 7 dni wykonywał tę pracę
+e9_1,Przyczyna niewykonywania pracy w ciągu ostatnich 7 dni
+e9_2m,Kiedy ostatni raz wykonywał tę pracę
+e9_2r,Kiedy ostatni raz wykonywał tę pracę
+e9_2ilem,"Liczba mies. od ostatniego razu, kiedy wykonywał pracę"
+e10_isco,Umowa o pracę - kat. zawod. ISCO
+e10_isco_d,Umowa o pracę - kat. zawod. ISCO
+e11,Praca zgodna z wykształceniem
+e12,Na ile przydatne w pracy wiedza i umiejętności ze szkół
+he12a,Przed koronawirusem wykonywał pracę zdalnie
+he12a1,"Procent czasu pracy, jaki stanowiła praca zdalna"
+he12b,Zakres pracy zdalnej zmienił się z powodu koronawirusa
+he12b1,Jak zmienił się zakres pracy zdalnej
+he12c,Obecnie wykonuje pracę zdalnie
+he12c1,"Procent czasu pracy, jaki stanowi praca zdalna"
+e13_kier,Piastuje funkcję kierowniczą
+e13,Kieruje pracą innych osób
+e13_1,Którakolwiek z podległych osób ma swoich podwładnych
+e13_2,"Ile w sumie ma podwładnych, licząc wszystkie szczeble"
+e14_1,"Aby osiągnąć rezultaty, pracownicy muszą być zmotywowani pieniędzmi lub zagrożeni"
+e14_2,"Mogę wyznaczyć pracownikom cel do realizacji, pozostawić wolną rękę i zaufać, że dobrze wykonają swoją pracę"
+e14_3,Większość pracowników lubi swoją pracę
+e14_4,"Gdyby nie ciągły nadzór, pracownicy obijaliby się w pracy"
+e15,Pracuje na część etatu
+e15w,Wymiar etatu (%)
+e15L,Część etatu: licznik
+e15M,Część etatu: mianownik
+e16,"Praca, którą chce wykonywać w dłuższej perspektywie czasowej, czy zajęcie tymczasowe"
+e17,"Na ile odpowiada praca, biorąc wszystko pod uwagę: samą pracę, jej warunki i zarobki"
+e18,"Spodziewa się, że przez najbliższe 12m nadal będzie pracować w tym zakładzie"
+e19_01,Gł. powód prawdopod. odejścia - redukcja zatrudnienia lub upadek firmy
+e19_02,Gł. powód prawdopod. odejścia - zniechęcenie do tej pracy
+e19_03,Gł. powód prawdopod. odejścia - chęć wykonywania innej pracy
+e19_04,Gł. powód prawdopod. odejścia - brak możliwości rozwoju osobistego
+e19_05,Gł. powód prawdopod. odejścia - brak możliwości awansu
+e19_06,Gł. powód prawdopod. odejścia - konieczność opieki nad dzieckiem
+e19_07,Gł. powód prawdopod. odejścia - konieczność opieki nad innym członkiem rodziny
+e19_08,Gł. powód prawdopod. odejścia - przeprowadzka
+e19_09,Gł. powód prawdopod. odejścia - przejście na emeryturę
+e19_10,Gł. powód prawdopod. odejścia - stan zdrowia
+e19_11,Gł. powód prawdopod. odejścia - wiek
+e19_12,Gł. powód prawdopod. odejścia - niskie zarobki
+e19_13,Gł. powód prawdopod. odejścia - wygaśnięcie umowy
+e19_14,Gł. powód prawdopod. odejścia - złe relacje z kierownictwem ['19]
+e19_15,Gł. powód prawdopod. odejścia - inny powód ['17: e19_14]
+e19_16,Gł. powód prawdopod. odejścia - odmowa odpowiedzi
+e19_15i,Gł. powód prawdopod. odejścia - inny powód (jaki) ['17: e19_14i]
+e20,"Jeśli skończy dotychczasową pracę, będzie szukać nowej"
+e20_1,W jakim zawodzie szukałby pracy
+e20_1_isco,W jakim zawodzie szukałby pracy - kat. zawod. ISCO
+e20_1_isco_d,W jakim zawodzie szukałby pracy - kat. zawod. ISCO
+e21,"Gdyby teraz stracił pracę, miałby problem ze znalezieniem nowej, podobnie płatnej"
+e22,Pracuje w tym zakładzie dłużej niż 12m
+e23,W minionych 12m wymiar godzin pracy…
+he23_1,he23_1 Zmiana czasu pracy miała związek z epidemią koronawirusa…
+e24,W minionych 12m zmienił się zakres obowiązków resp.
+e25,W minionych 12m…
+e26,W minionych 12m wynagrodzenie (za godz. pracy)…
+e27,Praca w tym zakładzie pozwoliła podnieść umiejętności w tym czasie
+ee1,Zatrudniony na drugim etacie
+ee2L,"Drugi etat: część etatu, na którą pracuje (licznik)"
+ee2M,"Drugi etat: część etatu, na którą pracuje (mianownik)"
+f1,W przeszłości zatrudniony na umowę o pracę (u innego pracodawcy)
+f2,Rok rozpoczęcia poprzedniej pracy
+f3,Rok zakończenia poprzedniej pracy
+f4_01,Powód zakończ. poprz. pracy - redukcja zatrudnienia lub upadek firmy
+f4_02,Powód zakończ. poprz. pracy - zniechęcenie do tej pracy
+f4_03,Powód zakończ. poprz. pracy - chęć wykonywania innej pracy
+f4_04,Powód zakończ. poprz. pracy - brak możliwości rozwoju osobistego
+f4_05,Powód zakończ. poprz. pracy - brak możliwości awansu
+f4_06,Powód zakończ. poprz. pracy - konieczność opieki nad dzieckiem
+f4_07,Powód zakończ. poprz. pracy - konieczność opieki nad innym członkiem rodziny
+f4_08,Powód zakończ. poprz. pracy - przeprowadzka
+f4_09,Powód zakończ. poprz. pracy - przejście na emeryturę
+f4_10,Powód zakończ. poprz. pracy - stan zdrowia
+f4_11,Powód zakończ. poprz. pracy - wiek
+f4_12,Powód zakończ. poprz. pracy - niskie zarobki
+f4_13,Powód zakończ. poprz. pracy - wygaśnięcie umowy
+f4_14,Powód zakończ. poprz. pracy - złe relacje z kierownictwem ['19]
+f4_15,Powód zakończ. poprz. pracy - inny powód ['17: f4_14]
+f4_15i,Powód zakończ. poprz. pracy - inny powód (jaki) ['17: f4_14i]
+hf4_1,Zakończenie pracy miało związek z epidemią koronawirusa...
+f5_isco,Poprzednia umowa o pracę - kat. zawod. ISCO
+f5_isco_d,Poprzednia umowa o pracę - kat. zawod. ISCO
+f6,Praca zgodna z wykształceniem
+f7,Na ile przydatne w pracy wiedza i umiejętności ze szkół
+u1,W minionych 12m zatrudniony na umowę o dzieło lub zlecenie
+u2,Nadal wykonuje umowę
+u2x,Obecnie zatrudniony na umowę o dzieło/zlecenie
+u2x_gl,Obecnie zatrudniony na umowę o dzieło/zlecenie (główna praca)
+u3,Łączna liczba umów cyw.-pr. w minionych 12 mies.
+u3_5k,Łączna liczba umów cyw.-pr. w minionych 12 mies.
+u3_1,Umowy dla jednego czy różnych pracodawców
+u3_1x,Umowy (w większości) dla jednego pracodawcy
+u3_2,Umowy dot. podobnego rodzaju pracy
+u4_1,Umowa cyw.-pr. - praca główna
+u4_2,"Umowa cyw.-pr. - praca dodatkowa, dorywcza"
+u4_3,"Umowa cyw.-pr. - praktyka, staż"
+u5_isco,Umowa cyw.-pr. - kat. zawod. ISCO
+u5_isco_d,Umowa cyw.-pr. - kat. zawod. ISCO
+u6,Praca zgodna z wykształceniem
+u7,Na ile przydatne w pracy wiedza i umiejętności ze szkół
+u8,"Na ile odpowiada praca, biorąc wszystko pod uwagę: samą pracę, jej warunki i zarobki"
+n1,W minionych 12m zatrudniony na podstawie umowy nieformalnej
+n2_dni,Praca bez umowy - łączny czas (dni)
+n2_mies,Praca bez umowy - łączny czas (mies.)
+n3_01,Praca bez umowy - dla firmy
+n3_02,"Praca bez umowy - dla rodziny, znajomych lub sąsiadów"
+n3_03,Praca bez umowy - dla innego prywatnego zleceniodawcy (ale nie firmy)
+n3_04,"Nie miał zleceniodawcy, była to praca na własny rachunek"
+n4_01,Praca bez umowy - budowlane
+n4_02,Praca bez umowy - remonty i naprawy
+n4_03,Praca bez umowy - ogrodnicze i rolne
+n4_04,Praca bez umowy - korepetycje
+n4_05,Praca bez umowy - pomoc domowa/sprzątanie
+n4_06,Praca bez umowy - opieka nad dzieckiem lub innym członkiem rodziny
+n4_07,Praca bez umowy - prace krawieckie
+n4_08,Praca bez umowy - handel
+n4_09,Praca bez umowy - gastronomia
+n4_10,Praca bez umowy - przygotowanie tekstu/dokumentu/projektu ['19]
+n4_11,Praca bez umowy - usługi transportowe ['19]
+n4_12,Praca bez umowy - prace administracyjne/biurowe ['21]
+n4_13,"Praca bez umowy - inne prace ['17: n4_10, '19: n4_12]"
+n5,Nadal wykonuje tę pracę
+n5x,Obecnie zatrudniony na podstawie umowy nieformalnej
+n6,Praca bez umowy - główna czy dodatkowa
+n6x,Praca bez umowy - główna
+n7,Praca bez umowy - nieuczciwe traktowanie
+n8_01,Powód pracy bez umowy - za wysokie podatki i opłaty
+n8_02,Powód pracy bez umowy - uciążliwe formalności przy podpisywaniu umowy
+n8_03,Powód pracy bez umowy - druga strona nie chciała podpisania umowy
+n8_04,Powód pracy bez umowy - pracodawca proponował wyższe wynagrodzenie bez umowy
+n8_05,Powód pracy bez umowy - utrata świadczeń lub zasiłków po rejestracji umowy
+n8_06,Powód pracy bez umowy - brak formalnych uprawnień
+n8_07,Powód pracy bez umowy - praca dla rodziny lub znajomych
+n8_08,Powód pracy bez umowy - niemożność znalezienia innej pracy
+n8_09,Powód pracy bez umowy - niechęć do wiązania się na dłużej z miejscem pracy
+n8_10,"Powód pracy bez umowy - była to tylko drobna, dorywcza praca"
+n8_11,Powód pracy bez umowy - inny powód
+n9,Praca zgodna z wykształceniem
+n10,Na ile przydatne w pracy wiedza i umiejętności ze szkół
+n11,"Na ile odpowiada praca, biorąc wszystko pod uwagę: samą pracę, jej warunki i zarobki"
+n12,Chęć przejścia na umowę formalną kosztem wynagrodzenia
+n12_1,Procent zarobku jaki jest gotów poświęcić
+n13,Praca bez umowy - w następnych 12m będą kolejne
+n14,Gdyby znalazł zatrudnienie na umowę o pracę
+c1,W minionych 12m pomagał nieodpłatnie w rodzinnej działaln. gosp./roln.
+c2,Nadal nieodpłatnie pomaga w rodzinnej działalności gosp./roln.
+x1,W minionych 12m pracował w ramach bezpłatnych praktyk/stażu
+x2,Nadal wykonuje pracę w ramach bezpłatnych praktyk/stażu
+x3,Łączny czas bezpłatnych praktyk/staży
+x4,Praca zgodna z wykształceniem
+x5,Przydatność praktyk/stażu dla dalszej kariery
+v1_1,Aktywność na rzecz organizacji pozarządowej (12m)
+v1_2,Aktywność na rzecz szkoły lub innej instytucji eduk. (12m)
+v1_3,"Aktywność na rzecz kościoła, wspólnoty paraf./związku wyzn. (12m)"
+v1_4,Aktywność na rzecz organizacji lub partii polit. (12m)
+v1_5,"Aktywność na rzecz swojej okolicy, miejscowości lub osiedla (12m)"
+v1_6,"Bezpośrednio pomagał ludziom spoza rodziny i kręgu najbliższych znajomych, np. sąsiadom, obcym (12m)"
+v2,Jak często w minionych 12m angażował się w wolontariat
+y1,W minionych 12m pracował zarobkowo za granicą
+y1_1,Ile miesięcy pracował zarobkowo za granicą
+y1_2,Praca za granicą - kraj
+y2,W najbliższych 12m zamierza wyjechać do pracy za granicą
+g1,Sytuacja zawodowa obecnie
+g1_1,Liczba godzin pracy w tygodniu
+g1_2,Był bezrobotny w ost. 12m
+g1_3,Miał jakąkolwiek pracę w ost. 12m
+g1_4ile,Ile miesięcy temu ostatni raz pracował
+g1_4ile_8k,Liczba miesięcy od ostatniej pracy (8kat)
+g1_4mies,Jak dawno wykonywał ostatnią pracę
+g1_4lat,Jak dawno wykonywał ostatnią pracę
+g2,Pracował 5 lat temu
+g2_1,Stanowisko 5 lat temu
+g2_2,"Zarobki na godz. pracy sprzed 5 lat, a sytuacja obecna"
+g2_3,Podniósł umiejętności w ciągu ost. 5 lat
+g2_4,"Szukanie pracy teraz, a 5 lat temu"
+g3,"Liczba lat, w których pracował zawodowo"
+g3_1,Rok rozpoczęcia pierwszej regularnej pracy zarobkowej (trwającej ponad 3 mies.)
+g3_1_1_isco,Pierwsza praca - kat. zawodowa ISCO
+g3_2,"Liczba firm, w których pracował na um. o pracę"
+g4,"Wiek, w którym spodziewa się przejść na emeryturę"
+g5,Spodziewa się dorabiać na emeryturze
+g6_1,"Wiek, do którego byłby w stanie wykonywać swoją pracę min. 20 godz. w tyg."
+g6_2,"Wiek, do którego byłby w stanie pracować min. 20 godz. w tyg."
+g7,Czego obecny pracodawca będzie oczekiwał po osiągnięciu wieku emerytalnego
+g8,Główna praca
+g8x,Główna praca
+g8_isco,Główna praca [wg g8] - kat. zawod. ISCO
+g9_pkd1,Czym zajmuje się zakład pracy (branża PKD)
+g9_pkd2,Czym zajmuje się zakład pracy (branża PKD)
+g9_pkd3,Czym zajmuje się zakład pracy (branża PKD)
+j1_01,Zadowolenie: Zarobki
+j1_02,Zadowolenie: Możliwości awansu
+j1_03,Zadowolenie: Relacje z przełożonymi
+j1_04,Zadowolenie: Kontakty ze współpracownikami
+j1_05,Zadowolenie: Pewność zatrudnienia
+j1_06,Zadowolenie: Możliwość rozwoju osobistego i podnoszenia umiejętności
+j1_07,Zadowolenie: Możliwość łączenia pracy z życiem osobistym i innymi obowiązkami
+j1_08,Zadowolenie: Możliwość wykazania się inicjatywą i samodzielnością
+j1_09,Zadowolenie: Warunki wykonywania pracy
+j1_10,"Zadowolenie: Z tego, co robi w pracy"
+j2,"Gdyby mógł zmienić decyzje dot. nauki i pracy, czy chciałby pracować w tym samym zawodzie"
+j2i_isco,Ponowny wybór zawodu - kat. zawod. ISCO
+j2i_isco_d,Ponowny wybór zawodu - kat. zawod. ISCO
+j3_01,Mam możliwość realizacji swoich własnych pomysłów
+j3_02,"Czuję, że praca którą wykonuję, ma sens"
+j3_03,Z chęcią zmieniłbym swoją pracę
+j3_04,W pracy muszę ciągle uczyć się nowych rzeczy
+j3_05,"Czuję, że w pracy wykorzystuję swoją wiedzę i umiejętności"
+j3_06,"Często muszę wykonywać zadania, które są zbyt proste w stosunku do moich umiejętności"
+j3_07,"Czasem muszę wykonywać zadania, które są zbyt trudne w stosunku do moich umiejętności"
+j3_08,W moim miejscu pracy panuje dobra atmosfera
+j3_09,"W pracy zdarza mi się padać ofiarą złośliwości i zaczepek, które sprawiają mi przykrość"
+j3_10,"Mam zbyt dużo zadań, by dobrze wykonać je na czas"
+j3_11,W mojej pracy zdarzają się sytuacje grożące uszczerbkiem na zdrowiu
+j3_12,"Czuję, że praca ma negatywny wpływ na moje zdrowie"
+j3_13,"Moja praca uniemożliwia mi poświęcenie bliskim tyle czasu, ile bym chciał"
+j4,"Kto bardziej nadaje się do pracy, którą wykonuje"
+j5,Ma przełożonego
+j5_plec,Płeć przełożonego
+j5_1,Mój bezpośredni przełożony odnosi się do mnie z szacunkiem
+j5_2,"Mój przełożony angażuje mnie w podejmowanie decyzji, które będą miały wpływ na moją pracę"
+j5_3,Moja praca jest sprawiedliwie oceniana
+j5_4,"Mój przełożony, kiedy tylko może, unika podejmowania decyzji"
+j6,Otrzymywał nieformalne wynagrodzenie
+j6_1,Nieformalne wynagrodzenie - jak często
+j6_1x,Nieformalne wynagrodzenie - jak często
+j7_1,Jak ważne w życiu - rodzina
+j7_2,Jak ważne w życiu - przyjaciele
+j7_3,Jak ważne w życiu - praca
+j7_4,Jak ważne w życiu - czas wolny
+j7_5,Jak ważne w życiu - zdrowie
+j7_6,Jak ważne w życiu - religia (wiara)
+j7_7,Jak ważne w życiu - polityka
+j7_8,"Jak ważne w życiu - praca społeczna, wolontariat"
+j8,"Chciałby pracować zawodowo, gdyby miał dość pieniędzy na utrzymanie przez resztę życia"
+j9_1,Znalezienie dobrej pracy zależy głównie od szczęścia ['19]
+j9_2,"W pracy awansują ci, którzy dobrze wykonują swoją pracę ['19]"
+j9_3,"Ludzie, którzy dobrze wykonują swoją pracę, są zazwyczaj nagradzani ['19]"
+j9_4,"To, czy ludzie zarabiają dużo, czy mało pieniędzy, zależy głównie od szczęścia ['19]"
+s1s2,Obecnie poszukuje pracy [pracujący i niepracujący łącznie]
+s1s2_ile,Od ilu miesięcy poszukuje pracy (pracujący i niepracujący łącznie)
+s1s2_ile_6k,Od ilu miesięcy poszukuje pracy
+s1,"Poszukuje innej pracy, poza tą, którą obecnie wykonuje [pracujący]"
+s1_1_1,"Przyczyna, dla której rozpoczął poszukiwania pracy"
+s1_1_2,"Przyczyna, dla której rozpoczął poszukiwania pracy"
+s1_2mies,Od ilu miesięcy aktywnie poszukuje innej pracy
+s1_2lat,Od ilu lat aktywnie poszukuje innej pracy
+s1_3,Szuka pracy w takim samym zawodzie
+s1_4_isco,Szukana praca - kat. zawodowa ISCO ['19]
+s2,Obecnie poszukuje pracy [niepracujący]
+s2_1,Planuje rozpocząć pracę lub jej poszukiwanie
+s2_2_1,"Przyczyna, dla której rozpoczął poszukiwania pracy"
+s2_2_2,"Przyczyna, dla której rozpoczął poszukiwania pracy"
+s2_3,Od ilu miesięcy aktywnie poszukuje pracy (uwzgl. lata)
+s2_3mies,Od ilu miesięcy aktywnie poszukuje pracy
+s2_3lat,Od ilu lat aktywnie poszukuje pracy
+s2_3dlug,Długotrwale bezrobotny [s2_3>12]
+s2_4,Mógłby zacząć pracę w nast. tyg.
+s2_5_isco,W jakim zawodzie szuka pracy - kat. zawod. ISCO
+s2_5_isco_d1,W jakim zawodzie szuka pracy (ISCO)
+s2_5_isco_d2,W jakim zawodzie szuka pracy (ISCO)
+s3_ile,Na ile sposobów szukał pracy
+s3_01,Szukał pracy (ost. 30 dni) - odpowiadanie na ogłoszenia o pracę w prasie
+s3_02,Szukał pracy (ost. 30 dni) - poszukiwanie informacji lub ogłoszenia o pracę w internecie
+s3_03,Szukał pracy (ost. 30 dni) - zamieszczenie własnego ogłoszenia w prasie lub internecie
+s3_04,"Szukał pracy (ost. 30 dni) - bezpośredni kontakt z pracodawcą (rozmowa, wysłanie CV itp.)"
+s3_05,Szukał pracy (ost. 30 dni) - rodzina lub znajomi
+s3_06,Szukał pracy (ost. 30 dni) - urząd pracy
+s3_07,Szukał pracy (ost. 30 dni) - targi pracy
+s3_08,"Szukał pracy (ost. 30 dni) - prywatne biuro pośrednictwa pracy, agencja rekrutacyjna"
+s3_09,Szukał pracy (ost. 30 dni) - szkoła lub uczelnia
+s3_10,Szukał pracy (ost. 30 dni) - inny sposób
+s4_0,"Szukał pracy przez internet - strona www Urzędu Pracy, Biuletyn Informacji Publicznej"
+s4_1,"Szukał pracy przez internet - strona z ogłoszeniami (pracuj.pl, strona UP, BIP itp.)"
+s4_2,Szukał pracy przez internet - facebook
+s4_3,"Szukał pracy przez internet - portale społecznościowe związane z karierą, np. LinkedIn lub Goldenline"
+s4_4,Szukał pracy przez internet - strona www pracodawcy
+s4_5,Szukał pracy przez internet - strona www innego rodzaju
+s4_6,Szukał pracy przez internet - odmowa odpowiedzi
+s5,"Pracodawca lub agencja sama się zgłosiła z ofertą pracy, ost. 30 dni"
+s6_1,Szuka pracy - w swoim miejscu zamieszkania
+s6_2,"Szuka pracy - w innej miejscowości lub regionie, co wiązałoby się z przeprowadzką"
+s6_3,Szuka pracy - w innym kraju
+s7,Liczba rozmów kwalifikacyjnych w ost. 4 tyg.
+s8,Ile godzin poświęcił na poszukiwanie pracy w ost. 7 dniach
+s9_1,W jakim wymiarze godzin chciałby pracować - na pełny etat
+s9_2,W jakim wymiarze godzin chciałby pracować - na część etatu
+s9_3,"W jakim wymiarze godzin chciałby pracować - dorywczo, na umowę cyw.-pr."
+s9_4,W jakim wymiarze godzin chciałby pracować - chciałby rozpocząć dz. gosp.
+s9_5,W jakim wymiarze godzin chciałby pracować - jeszcze nie wie
+s10,Rozważa rozpoczęcie własnej działalności gospodarczej
+s11,Byłby w stanie douczyć się do nowego zawodu
+s12_01,Utrudnia znalezienie/podjęcie pracy - opieka nad dzieckiem
+s12_02,Utrudnia znalezienie/podjęcie pracy - opieka nad innym członkiem rodziny
+s12_03,Utrudnia znalezienie/podjęcie pracy - zajmowanie się domem
+s12_04,Utrudnia znalezienie/podjęcie pracy - zajmowanie się gospodarstwem rolnym
+s12_05,Utrudnia znalezienie/podjęcie pracy - zły stan zdrowia
+s12_06,Utrudnia znalezienie/podjęcie pracy - wiek
+s12_07,Utrudnia znalezienie/podjęcie pracy - brak odpowiednich certyfikatów i uprawnień
+s12_08,Utrudnia znalezienie/podjęcie pracy - poziom wykształcenia
+s12_09,Utrudnia znalezienie/podjęcie pracy - niedostateczne doświadczenie
+s12_10,Utrudnia znalezienie/podjęcie pracy - nauka lub dokształcanie
+s12_11,Utrudnia znalezienie/podjęcie pracy - brak ofert pracy w okolicy
+s12_12,"Utrudnia znalezienie/podjęcie pracy - brak odpowiednich kontaktów, znajomości"
+o1_1,"MIN Najniższa miesięczna pensja netto, za którą podjąłby pracę"
+o1_2,MID Pensja miesięczna netto uznana za w miarę zadowalającą
+o1_3,MAX Pensja miesięczna netto uznana za bardzo zadowalającą
+k01,Analiza informacji i wyciąganie wniosków
+k02,Uczenie się nowych rzeczy
+k03,"Posługiwanie się komputerem, tabletem, smartfonem"
+k04,Obsługa specjalistycznych programów komputerowych
+k05,"Obsługa maszyn, narzędzi i urządzeń technicznych"
+k06,Montaż i naprawa maszyn i urządzeń technicznych
+k07,Wykonywanie prostych rachunków
+k08,Wykonywanie zaawansowanych obliczeń matematycznych
+k09,Zdolności artystyczne
+k10,Sprawność fizyczna
+k11,Radzenie sobie w sytuacjach stresujących
+k12,Gotowość do brania na siebie odpowiedzialności  za wykonanie zadań
+k13,"Pomysłowość, kreatywność"
+k14,Zarządzanie czasem i terminowość
+k15,Samodzielna organizacja pracy
+k16,Praca w grupie
+k17,Łatwe nawiązywanie kontaktów z ludźmi
+k18,Bycie komunikatywnym i jasne przekazywanie myśli
+k19,Współpraca z osobami różnych narodowości
+k20,Praca administracyjna i prowadzenie dokumentacji
+k21,Koordynowanie pracy innych osób
+k22,Rozwiązywanie konfliktów między ludźmi
+k23,"Biegłe posługiwanie się jęz. polskim w mowie i piśmie (poprawność językowa, bogate słownictwo, łatwość wysławiania się)"
+k24,Gotowość do częstych wyjazdów
+k25,Gotowość do pracy w nietypowych godzinach wymaganych przez pracodawcę
+w1,W dzieciństwie był w żłobku lub przedszkolu
+w2,Ukończył naukę w szkole podstawowej
+w3,Kontynuował naukę po szkole podstawowej
+w3G,Gimnazjum
+w3G_2,Gimnazjum - stan
+w3LO,Liceum ogólnokształcące
+w3LO_2,Liceum ogólnokształcące - stan
+w3LO_3,Liceum ogólnokształcące - matura
+w3Z,Zasadnicza szkoła zawodowa
+w3Z_2,Zasadnicza szkoła zawodowa - stan
+w3Z_4_isco,Zasadnicza szkoła zawodowa  - kat. zawodowa ISCO
+w3Z_4_isco_d,Zasadnicza szkoła zawodowa  - kat. zawodowa ISCO (2)
+w3T,Technikum
+w3T_2,Technikum - stan
+w3T_3,Technikum – matura
+w3T_4_isco,w3T_2. Technikum – stan
+w3T_4_isco_d,w3T_3. Technikum – matura
+w3LZ,Liceum zawodowe/profil.
+w3LZ_2,Liceum zawodowe/profil. - stan
+w3LZ_3,Liceum zawodowe/profil. - matura
+w3LZ_4_isco,w3lz_4_isco1. Kategoria zawodowa ISCO
+w3LZ_4_isco_d,w3lz_4_isco2. Kategoria zawodowa ISCO
+w3SP,Szkoła policealna
+w3SP_2,Szkoła policealna - stan
+w3IN,Inna szkoła
+w3IN_2,Inna szkoła - stan
+w4,Kontynuował naukę na studiach wyższych
+w4_1,Rok zakończenia/przerwania nauki szkolnej
+w5_1_lic,licencjat
+w5_2_inz,inżynier
+w5_3_mgr,magister
+w5_4_mgrinz,magister inż.
+w5_5_pdp,podyplomowe
+w5_6_mba,MBA
+w5_7_dr,doktorat
+isced3a,"Kierunek ukończony (najwcześniej) na najwyższym poziomie (ISCED, poziom 3)"
+isced2a,"Kierunek ukończony (najwcześniej) na najwyższym poziomie (ISCED, poziom 2)"
+isced1a,"Kierunek ukończony (najwcześniej) na najwyższym poziomie (ISCED, poziom 3)"
+isced3b,"Kierunek ukończony (najpóźniej) na najwyższym poziomie (ISCED, poziom 3)"
+isced2b,"Kierunek ukończony (najpóźniej) na najwyższym poziomie (ISCED, poziom 2)"
+isced1b,"Kierunek ukończony (najpóźniej) na najwyższym poziomie (ISCED, poziom 1)"
+w5_1_1x,Kierunek 1 [stare kodowanie 6-cyfrowe]
+w5_1_1,"Kierunek 1 - ISCED, poziom 3"
+isced2_1,"Kierunek 1 - ISCED, poziom 2"
+isced1_1,"Kierunek 1 - ISCED, poziom 1"
+w5_2_1,Kierunek 1 - uczelnia
+w5_3_1,Kierunek 1 - typ uczelni
+w5_4_1,Kierunek 1 - tytuł po ukończeniu
+w5_5_1,Kierunek 1 - tryb studiów
+w5_6_1,Kierunek 1 - ukończył studia
+w5_6_uk1,Kierunek 1 - rok ukończenia
+w5_6_abs1,Kierunek 1 - rok absolutorium
+w5_7_1,Kierunek 1 - uzyskał tytuł inżyniera
+w5_1_2x,Kierunek 2 [stare kodowanie 6-cyfrowe]
+w5_1_2,"Kierunek 2 - ISCED, poziom 3"
+isced2_2,"Kierunek 2 - ISCED, poziom 2"
+isced1_2,"Kierunek 2 - ISCED, poziom 1"
+w5_2_2,Kierunek 2 - uczelnia
+w5_3_2,Kierunek 2 - typ uczelni
+w5_4_2,Kierunek 2 - tytuł po ukończeniu
+w5_5_2,Kierunek 2 - tryb studiów
+w5_6_2,Kierunek 2 - ukończył studia
+w5_6_uk2,Kierunek 2 - rok ukończenia
+w5_6_abs2,Kierunek 2 - rok absolutorium
+w5_7_2,Kierunek 2 - uzyskał tytuł inżyniera
+w5_1_3x,Kierunek 3 [stare kodowanie 6-cyfrowe]
+w5_1_3,"Kierunek 3 - ISCED, poziom 3"
+isced2_3,"Kierunek 3 - ISCED, poziom 2"
+isced1_3,"Kierunek 3 - ISCED, poziom 1"
+w5_2_3,Kierunek 3 - uczelnia
+w5_3_3,Kierunek 3 - typ uczelni
+w5_4_3,Kierunek 3 - tytuł po ukończeniu
+w5_5_3,Kierunek 3 - tryb studiów
+w5_6_3,Kierunek 3 - ukończył studia
+w5_6_uk3,Kierunek 3 - rok ukończenia
+w5_6_abs3,Kierunek 3 - rok absolutorium
+w5_7_3,Kierunek 3 - uzyskał tytuł inżyniera
+w5_1_4x,Kierunek 4 [stare kodowanie 6-cyfrowe]
+w5_1_4,"Kierunek 4 - ISCED, poziom 3"
+isced2_4,"Kierunek 4 - ISCED, poziom 2"
+isced1_4,"Kierunek 4 - ISCED, poziom 1"
+w5_2_4,Kierunek 4 - uczelnia
+w5_3_4,Kierunek 4 - typ uczelni
+w5_4_4,Kierunek 4 - tytuł po ukończeniu
+w5_5_4,Kierunek 4 - tryb studiów
+w5_6_4,Kierunek 4 - ukończył studia
+w5_6_uk4,Kierunek 4 - rok ukończenia
+w5_6_abs4,Kierunek 4 - rok absolutorium
+w5_7_4,Kierunek 4 - uzyskał tytuł inżyniera
+w5_1_5x,Kierunek 5 [stare kodowanie 6-cyfrowe]
+w5_1_5,"Kierunek 5 - ISCED, poziom 3"
+isced2_5,"Kierunek 5 - ISCED, poziom 2"
+isced1_5,"Kierunek 5 - ISCED, poziom 1"
+w5_2_5,Kierunek 5 - uczelnia
+w5_3_5,Kierunek 5 - typ uczelni
+w5_4_5,Kierunek 5 - tytuł po ukończeniu
+w5_5_5,Kierunek 5 - tryb studiów
+w5_6_5,Kierunek 5 - ukończył studia
+w5_6_uk5,Kierunek 5 - rok ukończenia
+w5_6_abs5,Kierunek 5 - rok absolutorium
+w5_7_5,Kierunek 5 - uzyskał tytuł inżyniera
+w5_1_6x,Kierunek 6 [stare kodowanie 6-cyfrowe]
+w5_1_6,"Kierunek 6 - ISCED, poziom 3"
+isced2_6,"Kierunek 6 - ISCED, poziom 2"
+isced1_6,"Kierunek 6 - ISCED, poziom 1"
+w5_2_6,Kierunek 6 - uczelnia
+w5_3_6,Kierunek 6 - typ uczelni
+w5_4_6,Kierunek 6 - tytuł po ukończeniu
+w5_5_6,Kierunek 6 - tryb studiów
+w5_6_6,Kierunek 6 - ukończył studia
+w5_6_uk6,Kierunek 6 - rok ukończenia
+w5_6_abs6,Kierunek 6 - rok absolutorium
+w5_7_6,Kierunek 6 - uzyskał tytuł inżyniera
+w6,Gdyby mógł ponownie wybrać kierunek studiów [wiek <= 35 lat]
+w6_1,Studiuje/studiował kilka kierunków - który miał na myśli
+w6_1_KOD,w6_1_KOD. Ponowny wybór kierunku studiów - nazwa kierunku odniesienia i kod kierunku
+isced1_w6,"Kierunek odniesienia - jedyny studiowany bądź wskazany w w6_1 (ISCED, poziom 1)"
+w6_2_1x,Ponowny wybór studiów - inny kierunek 1 [stare kodowanie 6-cyfrowe]
+w6_2_1,"Ponowny wybór studiów - inny kierunek 1 (ISCED, poziom 3)"
+isced2_w6_2_1,"Ponowny wybór studiów - inny kierunek 1 (ISCED, poziom 2)"
+isced1_w6_2_1,"Ponowny wybór studiów - inny kierunek 1 (ISCED, poziom 1)"
+w6_2_2x,Ponowny wybór studiów - inny kierunek 2 [stare kodowanie 6-cyfrowe]
+w6_2_2,"Ponowny wybór studiów - inny kierunek 2 (ISCED, poziom 3)"
+isced2_w6_2_2,"Ponowny wybór studiów - inny kierunek 2 (ISCED, poziom 2)"
+isced1_w6_2_2,"Ponowny wybór studiów - inny kierunek 2 (ISCED, poziom 1)"
+w6_2_3x,Ponowny wybór studiów - inny kierunek 3 [stare kodowanie 6-cyfrowe]
+w6_2_3,"Ponowny wybór studiów - inny kierunek 3 (ISCED, poziom 3)"
+isced2_w6_2_3,"Ponowny wybór studiów - inny kierunek 3 (ISCED, poziom 2)"
+isced1_w6_2_3,"Ponowny wybór studiów - inny kierunek 3 (ISCED, poziom 1)"
+w7_01,Nauka w ost. 4 tyg. - szkoła podstawowa
+w7_02,Nauka w ost. 4 tyg. - gimnazjum
+w7_03,Nauka w ost. 4 tyg. - liceum ogólnokształcące
+w7_04,Nauka w ost. 4 tyg. - zasadnicza szkoła zawodowa
+w7_05,Nauka w ost. 4 tyg. - technikum
+w7_06,Nauka w ost. 4 tyg. - liceum zawodowe/profil.
+w7_07,Nauka w ost. 4 tyg. - szkoła policealna
+w7_08,Nauka w ost. 4 tyg. - inna szkoła (nie uczelnia wyższa)
+w7_09,"Nauka w ost. 4 tyg. - studia licenc., mgr., inż. lub mgr-inż (bez podyplom.)"
+w7_10,"Nauka w ost. 4 tyg. - studia podyplomowe, MBA"
+w7_11,Nauka w ost. 4 tyg. - studia doktoranckie
+w7_12,Nauka w ost. 4 tyg. - nie uczył się
+w7_1_01,Nauka w ost. 12m. - szkoła podstawowa
+w7_1_02,Nauka w ost. 12m. - gimnazjum
+w7_1_03,Nauka w ost. 12m. - liceum ogólnokształcące
+w7_1_04,Nauka w ost. 12m. - zasadnicza szkoła zawodowa
+w7_1_05,Nauka w ost. 12m. - technikum
+w7_1_06,Nauka w ost. 12m. - liceum zawodowe/profil.
+w7_1_07,Nauka w ost. 12m. - szkoła policealna
+w7_1_08,Nauka w ost. 12m. - inna szkoła (nie uczelnia wyższa)
+w7_1_09,"Nauka w ost. 12m. - studia licenc., mgr., inż. lub mgr-inż (bez podyplom.)"
+w7_1_10,"Nauka w ost. 12m. - studia podyplomowe, MBA"
+w7_1_11,Nauka w ost. 12m. - studia doktoranckie
+w7_1_12,Nauka w ost. 12m. - nie uczył się
+w8,Szkoły nauczyły pracy w grupie
+w9,Zna jakiś język obcy
+w9_1,Język obcy 1
+w9_1p,Język obcy 1 - poziom
+w9_2,Język obcy 2
+w9_2p,Język obcy 2 - poziom
+w9_3,Język obcy 3
+w9_3p,Język obcy 3 - poziom
+w9_4,Język obcy 4
+w9_4p,Język obcy 4 - poziom
+w9_5,Język obcy 5
+w9_5p,Język obcy 5 - poziom
+w10,Częstość osobistego korzystania z Internetu lub e-maila
+d1_12_1,"Studia podyplom., zaoczne, MBA (12m)"
+d1_12_2,Szkoły dla dorosłych (12m)
+d1_12_3,"Szkolenia BHP, ppoż. (12m)"
+d1_12_4,Kursy i szkolenia stacjonarne poza BHP i ppoż. (12m)
+d1_12_5,Kursy i szkolenia przez Internet (e-learning) (12m)
+d1_12_6,"Konferencje, seminaria (12m)"
+d1_12_7,"Staże, praktyki zawod. (12m)"
+d1_12_8,Nie uczestniczył w żadnej z powyższych form (12m)
+d1_4_1,"Studia podyplom., zaoczne, MBA (4 tyg.)"
+d1_4_2,Szkoły dla dorosłych (4 tyg.)
+d1_4_3,"Szkolenia BHP, ppoż. (4 tyg.)"
+d1_4_4,Kursy i szkolenia stacjonarne poza BHP i ppoż. (4 tyg.)
+d1_4_5,Kursy i szkolenia przez Internet (e-learning) (4 tyg.)
+d1_4_6,"Konferencje, seminaria (4 tyg.)"
+d1_4_7,"Staże, praktyki zawod. (4 tyg.)"
+d2_1,Motywacje dla rozwoju umiejętności zawodowych
+d2_2,Motywacje dla rozwoju umiejętności zawodowych
+d2_3,Motywacje dla rozwoju umiejętności zawodowych
+d2_3i,Motywacje do rozwoju umiejętności zawodowych
+d3_1,Kto finansował udział we wskazanych formach rozwoju - pracodawca
+d3_2,Kto finansował udział we wskazanych formach rozwoju - z własnych pieniędzy
+d3_3,"Kto finansował udział we wskazanych formach rozwoju - rodzina, znajomi"
+d3_4,Kto finansował udział we wskazanych formach rozwoju - urząd pracy
+d3_5,Kto finansował udział we wskazanych formach rozwoju - inna instytucja
+d3_6,Kto finansował udział we wskazanych formach rozwoju - udział był bezpłatny
+d3_7,Kto finansował udział we wskazanych formach rozwoju - odmowa odpowiedzi
+d4_12_1,Okresowa obserwacja pracy innego pracownika (tzw. job-shadowing) (12m)
+d4_12_2,"Wykonywanie zadań w pracy przy wsparciu innej osoby np. przełożonego lub współpracownika (mentoring, coaching) (12m)"
+d4_12_3,Czasowe wykonywanie zadań na innym stanowisku pracy w celach szkoleniowych (rotacja) (12m)
+d4_12_4,"Instruktaż dotyczący np. obsługi nowego sprzętu, maszyn, oprogramowania (12m)"
+d4_12_5,"Wizyty studyjne, obserwacyjne w innych firmach, instytucjach (12m)"
+d4_12_6,"Spotkania międzyzespoł., których celem była wymiana wiedzy o pracy innych zespołów (12m)"
+d4_12_7,Nie uczestniczył w żadnej z powyższych form rozwoju w miejscu pracy (12m)
+d4_4_1,Okresowa obserwacja pracy innego pracownika (tzw. job-shadowing) (4 tyg.)
+d4_4_2,"Wykonywanie zadań w pracy przy wsparciu innej osoby np. przełożonego lub współpracownika (mentoring, coaching) (4 tyg.)"
+d4_4_3,Czasowe wykonywanie zadań na innym stanowisku pracy w celach szkoleniowych (rotacja) (4 tyg.)
+d4_4_4,"Instruktaż dotyczący np. obsługi nowego sprzętu, maszyn, oprogramowania (4 tyg.)"
+d4_4_5,"Wizyty studyjne, obserwacyjne w innych firmach, instytucjach (4 tyg.)"
+d4_4_6,"Spotkania międzyzespoł., których celem była wymiana wiedzy o pracy innych zespołów (4 tyg.)"
+d4_4_7,Nie uczestniczył w żadnej z powyższych form rozwoju w miejscu pracy (4 tyg.)
+d5,W jakim stopniu ma możliwość wykorzystania zdobytej wiedzy i umiejętności
+d6,Chciałby rozwijać swoje umiejętności i wiedzę w najbliższych 12m
+d7_12_1,"Zajęcia sportowe (np. treningi, kursy sportowe) (12m)"
+d7_12_2,Szkolenia i kursy stacjonarne (inne niż sportowe) (12m)
+d7_12_3,Kursy i szkolenia przez Internet (e-learning) (12m)
+d7_12_4,"Konferencje, seminaria (12m)"
+d7_12_5,Uniwersytety drugiego i trzeciego wieku (12m)
+d7_12_6,Nie uczestniczył  w żadnej z powyższych form rozwoju (12m)
+d7_4_1,"Zajęcia sportowe (np. treningi, kursy sportowe) (4 tyg.)"
+d7_4_2,Szkolenia i kursy stacjonarne (inne niż sportowe) (4 tyg.)
+d7_4_3,Kursy i szkolenia przez Internet (e-learning) (4 tyg.)
+d7_4_4,"Konferencje, seminaria (4 tyg.)"
+d7_4_5,Uniwersytety drugiego i trzeciego wieku (4 tyg.)
+d7_4_6,Nie uczestniczył  w żadnej z powyższych form rozwoju (4 tyg.)
+d8_01,Przyczyny braku kształcenia/rozwoju - nie było potrzebne w pracy
+d8_02,Przyczyny braku kształcenia/rozwoju - nie spełniał wymogów formalnych
+d8_03,Przyczyny braku kształcenia/rozwoju - uczestnictwo było zbyt drogie
+d8_04,Przyczyny braku kształcenia/rozwoju - brak poparcia/zachęty ze strony pracodawcy
+d8_05,Przyczyny braku kształcenia/rozwoju - brak czasu z powodów zawodowych
+d8_06,Przyczyny braku kształcenia/rozwoju - brak czasu z powodów osobistych
+d8_07,Przyczyny braku kształcenia/rozwoju - brak ciekawych ofert blisko miejsca zamieszkania
+d8_08,Przyczyny braku kształcenia/rozwoju - nie pozwalał stan zdrowia
+d8_09,Przyczyny braku kształcenia/rozwoju - w tym wieku nie ma sensu się kształcić
+d8_10,Przyczyny braku kształcenia/rozwoju - dotychczasowe formy kształcenia niewiele dały
+d8_11,Przyczyny braku kształcenia/rozwoju - inny powód
+d8_12,Przyczyny braku kształcenia/rozwoju - trudno powiedzieć
+d8_13,Przyczyny braku kształcenia/rozwoju - odmowa odpowiedzi
+d8_11i,Przyczyny braku kształcenia/rozwoju: inny powód
+d9,"Ile lat temu ostatni raz brał udział w szkoleniu lub innej formie rozwoju (poza BHP, ppoż.)"
+d10_01,Samodzielne uczenie się (12m) - od członków rodziny lub wspólnie z nimi
+d10_02,"Samodzielne uczenie się (12m) - od przyjaciół, znajomych, współpracowników lub wspólnie z nimi"
+d10_03,"Samodzielne uczenie się (12m) - z książek, magazynów lub innych materiałów drukowanych"
+d10_04,Samodzielne uczenie się (12m) - z materiałów internetowych
+d10_05,Samodzielne uczenie się (12m) - przy użyciu programów komputerowych
+d10_06,"Samodzielne uczenie się (12m) - z programów telewizyjnych, radiowych"
+d10_07,Samodzielne uczenie się (12m) - poprzez wolontariat lub inną pracę charytatywną
+d10_08,"Samodzielne uczenie się (12m) - spotkania w organizacji, stowarzyszeniu, kółka zainteresowań"
+d10_09,"Samodzielne uczenie się (12m) - muzea, wystawy, galerie"
+d10_10,Samodzielne uczenie się (12m) - w inny sposób
+d10_11,Samodzielne uczenie się (12m) - żadne z powyższych
+d10_12,Samodzielne uczenie się (12m) - odmowa odpowiedzi
+d11,Posiada prawo jazdy
+d11_A1,Prawo jazdy - kat. A1
+d11_A,Prawo jazdy - kat. A
+d11_B1,Prawo jazdy - kat. B1
+d11_B,Prawo jazdy - kat. B
+d11_C1,Prawo jazdy - kat. C1
+d11_C,Prawo jazdy - kat. C
+d11_D1,Prawo jazdy - kat. D1
+d11_D,Prawo jazdy - kat. D
+d11_BE,Prawo jazdy - kat. BE
+d11_C1E,Prawo jazdy - kat. C1E
+d11_CE,Prawo jazdy - kat. CE
+d11_D1E,Prawo jazdy - kat. D1E
+d11_DE,Prawo jazdy - kat. DE
+d11_T,Prawo jazdy - kat. T ['21]
+d12_1,Brak certyfikatu/licencji - nie dostał pracy
+d12_2,Brak certyfikatu/licencji - nie otrzymał awansu w pracy
+d12_3,Brak certyfikatu/licencji - nie mógł wykonywać niektórych zadań w pracy
+d12_4,"Brak certyfikatu/licencji - nie starał się o pracę, która odpowiadała umiejętnościom"
+d13,"Formalne potwierdz. posiadanych umiejętności w formie certyfikatu, dyplomu lub licencji byłoby przydatne w rozwoju karie"
+z1,Jak ogólnie ocenia stan swojego zdrowia
+z2,Na ogół samopoczucie psychiczne jest
+hz2_1,Na samopoczucie mają wpływ okoliczności zw. z pandemią ['21]
+z3,Obecny stan zdrowia utrudnia podjęcie lub wykonywanie pracy zarobkowej
+z4,"Długotrwała choroba, niepełnosprawn., problemy psych. utrudniają wykonyw. codziennych czynności"
+z4_1,W jakim stopniu odczuwa te utrudnienia
+z4_2,Ma orzeczony jakiś stopień niepełnosprawności
+m3_1,Podsumowanie syt. zawod. - praca w pełnym wymiarze godzin
+m3_2,Podsumowanie syt. zawod. - praca w niepełnym wymiarze godzin
+m3_3,Podsumowanie syt. zawod. - czasowa przerwa w pracy
+m3_4,Podsumowanie syt. zawod. - jest bezrobotny
+m3_5,Podsumowanie syt. zawod. - jest na emeryturze
+m3_6,Podsumowanie syt. zawod. - uczy się
+m3_7,Podsumowanie syt. zawod. - zajmuje się domem
+m3_8,Podsumowanie syt. zawod. - jest na rencie
+m3_9,Podsumowanie syt. zawod. - odmowa odpowiedzi
+m4_1,Wykształcenie matki/opiekunki
+m4_2,Wykształcenie ojca/opiekuna
+m5,Stan cywilny
+m5_3k,Stan cywilny (3 kat)
+m5_1_1,Syt. zawod. współmałż./partnera - praca w pełnym wymiarze godzin
+m5_1_2,Syt. zawod. współmałż./partnera - praca w niepełnym wymiarze godzin
+m5_1_3,Syt. zawod. współmałż./partnera - czasowa przerwa w pracy
+m5_1_4,Syt. zawod. współmałż./partnera - jest bezrobotny
+m5_1_5,Syt. zawod. współmałż./partnera - jest na emeryturze
+m5_1_6,Syt. zawod. współmałż./partnera - uczy się
+m5_1_7,Syt. zawod. współmałż./partnera - zajmuje się domem
+m5_1_8,Syt. zawod. współmałż./partnera - jest na rencie
+m5_1_9,Syt. zawod. współmałż./partnera - odmowa odpowiedzi
+m5_2,Wykształcenie współmałż./partnera
+m5_3,Wcześniej był w związku małżeńskim
+m6,Ma dzieci
+m7,Ile ma dzieci
+m7_1,Rok urodzenia najstarszego/jedynego dziecka
+m7_2,Rok urodzenia najmłodszego/jedynego dziecka
+m7_3,Liczba dzieci pozostających na pełnym utrzymaniu
+m7_4,Rok urodzenia dziecka (jedynak)
+m7_5,Czy dziecko pozostaje na pełnym utrzymaniu (jedynak)
+m8,Ile osób łącznie z Resp. mieszka w gosp. domowym
+m9_dane,Przeciętne miesięczne zarobki netto - typ danych
+m9,Przeciętne miesięczne zarobki netto w ost. 12m - dokładne
+m9d,Przeciętne miesięczne zarobki netto w ost. 12m - dokładne (uwzgl. dane przedziałowe)
+m9_1,Przeciętne miesięczne zarobki netto w ost. 12m - przedział
+m9_13k,Przeciętne miesięczne zarobki netto w ost. 12m - przedział (uwzgl. dane dokładne)
+m10_dane,Dochody całego gosp. domowego - typ danych
+m10,Przec. całk. mies. dochody netto gosp. dom. w ost. 12m - dokładne
+m10d,Przec. całk. mies. dochody netto gosp. dom. w ost. 12m - dokładne (uwzgl. dane przedziałowe)
+m10_1,Przec. całk. mies. dochody netto gosp. dom. w ost. 12m - przedział
+m10_15k,Przec. całk. mies. dochody netto gosp. dom. w ost. 12m - przedział (uwzgl. dane dokładne)
+m11,Od ilu osób pochodzą dochody gosp. domowego
+m12,Kto w gosp. domowym ma największy dochód
+hm13a,Jak na sytuację materialną wpłynęły okoliczności związane z pandemią
+m13,Przy aktualnym dochodzie gosp. domowego związanie końca z końcem jest…
+m14_01,Świadczenia publiczne (12m) - emerytura
+m14_02,Świadczenia publiczne (12m) - świadczenie przedemerytalne
+m14_03,Świadczenia publiczne (12m) - zasiłek dla bezrobotnych
+m14_04,Świadczenia publiczne (12m) - zasiłek chorobowy
+m14_05,Świadczenia publiczne (12m) - zasiłek macierzyński
+m14_06,Świadczenia publiczne (12m) - renta z tytułu niezdolności do pracy lub renta socjalna
+m14_07,Świadczenia publiczne (12m) - zasiłek rodzinny
+m14_08,Świadczenia publiczne (12m) - świadczenie 500+
+m14_09,Świadczenia publiczne (12m) - pomoc społeczna
+m14_10,Świadczenia publiczne (12m) - inne świadczenie
+m14_11,Świadczenia publiczne (12m) - nie otrzymywał żadnych świadczeń
+m14_12,Świadczenia publiczne (12m) - odmowa odpowiedzi
+m15,Program 500+ - na ile dzieci otrzymuje
+test_komp,Wynik testu kompetencji komputerowych (0-5) ['17]
+test_slow,Test słowny (płynności językowej) - liczba wymienionych zwierząt ['19]
+test_mat,Wynik testu kompetencji matematycznych (0-5)
+a10,Płeć ankietera
+a11,Poziom wykształcenia ankietera
+ZAWODY_ISCO,"-------------- Poniżej kategoryzacja zawodów na 1, 2, 3 i 4 poziom ISCO -----------------------------------------------------"
+p3_isco1,Działalność gosp./roln. - kat. zawod. ISCO
+p3_isco2,Działalność gosp./roln. - kat. zawod. ISCO
+p3_isco3,Działalność gosp./roln. - kat. zawod. ISCO
+p3_isco4,Działalność gosp./roln. - kat. zawod. ISCO
+q3_isco1,Poprzednia dz. - kat. zawod. ISCO
+q3_isco2,Poprzednia dz. - kat. zawod. ISCO
+q3_isco3,Poprzednia dz. - kat. zawod. ISCO
+q3_isco4,Poprzednia dz. - kat. zawod. ISCO
+e10_isco_3k,Umowa o pracę - kat. zawod. ISCO
+e10_isco1,Umowa o pracę - kat. zawod. ISCO
+e10_isco2,Umowa o pracę - kat. zawod. ISCO
+e10_isco3,Umowa o pracę - kat. zawod. ISCO
+e10_isco4,Umowa o pracę - kat. zawod. ISCO
+e20_1_isco1,W jakim zawodzie szukałby pracy - kat. zawod. ISCO
+e20_1_isco2,W jakim zawodzie szukałby pracy - kat. zawod. ISCO
+e20_1_isco3,W jakim zawodzie szukałby pracy - kat. zawod. ISCO
+e20_1_isco4,W jakim zawodzie szukałby pracy - kat. zawod. ISCO
+f5_isco1,Poprzednia umowa o pracę - kat. zawod. ISCO
+f5_isco2,Poprzednia umowa o pracę - kat. zawod. ISCO
+f5_isco3,Poprzednia umowa o pracę - kat. zawod. ISCO
+f5_isco4,Poprzednia umowa o pracę - kat. zawod. ISCO
+u5_isco1,Umowa cyw.-pr. - kat. zawod. ISCO
+u5_isco2,Umowa cyw.-pr. - kat. zawod. ISCO
+u5_isco3,Umowa cyw.-pr. - kat. zawod. ISCO
+u5_isco4,Umowa cyw.-pr. - kat. zawod. ISCO
+g8_isco_3k,Główna praca [wg g8] - kat. zawod. ISCO
+g8_isco1,Główna praca [wg g8] - kat. zawod. ISCO
+g8_isco2,Główna praca [wg g8] - kat. zawod. ISCO
+g8_isco3,Główna praca [wg g8] - kat. zawod. ISCO
+g8_isco4,Główna praca [wg g8] - kat. zawod. ISCO
+j2i_isco1,Ponowny wybór zawodu - kat. zawod. ISCO
+j2i_isco2,Ponowny wybór zawodu - kat. zawod. ISCO
+j2i_isco3,Ponowny wybór zawodu - kat. zawod. ISCO
+j2i_isco4,Ponowny wybór zawodu - kat. zawod. ISCO
+s2_5_isco1,Umowa o pracę - kat. zawod. ISCO
+s2_5_isco2,Umowa o pracę - kat. zawod. ISCO
+s2_5_isco3,Umowa o pracę - kat. zawod. ISCO
+s2_5_isco4,Umowa o pracę - kat. zawod. ISCO
+zawod,Praca aktualna lub ostatnio wykonywana - kat. zawod. ISCO
+zawod1,Praca aktualna lub ostatnio wykonywana - kat. zawod. ISCO
+zawod2,Praca aktualna lub ostatnio wykonywana - kat. zawod. ISCO
+zawod3,Praca aktualna lub ostatnio wykonywana - kat. zawod. ISCO
+zawod4,Praca aktualna lub ostatnio wykonywana - kat. zawod. ISCO
+DOKSZTAŁCANIE,-------------- Poniżej zmienne syntetyczne dot. różnych form dokształcania -----------------------------------------------------
+form4t,"Uczestniczył w kształceniu formalnym (4 tyg.) [w3,w5,w7,d1_4_1,d1_4_2]"
+pform4t1,"Dokszt. pozaformalne - związ. z pracą, w tym prawo jazdy (4 tyg.) [d1(bez1,2),d4,d11]"
+pform4t2,Dokszt. pozaformalne - niezwiązane z pracą (4 tyg.) [d7]
+pform4t,"Uczestniczył w kształceniu pozaformalnym (4 tyg.) [d1(bez1,2),d4,d7,d11]"
+neet,"Należy do kategorii NEET (Not in Employment, Education or Training) [pform4t1]"
+neet2,Należy do kategorii NEET (uwzgl. kompetencje nie-zawodowe) [pform4t]
+form12m,"Uczestniczył w kształceniu formalnym (12m) [w3,w5,w7,d1_12_1,d1_12_2]"
+pform12m1,"Dokszt. pozaformalne - związ. z pracą, w tym prawo jazdy (12m) [d1(bez1,2),d4,d11]"
+pform12m2,Dokszt. pozaformalne - niezwiązane z pracą (12m) [d7]
+pform12m,"Uczestniczył w kształceniu pozaformalnym (12m) [d1(bez1,2),d4,d7,d11]"
+nform12m,Uczestniczył w kształceniu nieformalnym (12m) [d10]
+dokszt_all,"Uczył się w jakikolwiek sposób (12m) [form12m, pform12m, nform12m]"
+dokszt_all_bo,"Uczył się w jakikolwiek sposób (bez obow.) (12m) [form12m,pform12m,nform12m]"

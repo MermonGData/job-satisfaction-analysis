@@ -1,0 +1,41 @@
+Column,Description
+id,Unikalny identyfikator respondenta w bazie łączonej
+woj,Województwo (symbol terytorialny TERC)
+m1,Rok urodzenia respondenta
+wiek,Wiek
+m2,Płeć respondenta
+wykszt_7k,Wykształcenie ukończone (6 kat)
+p8,"Na ile odpowiada praca, biorąc wszystko pod uwagę: samą pracę, jej warunki i zarobki"
+e17,"Na ile odpowiada praca, biorąc wszystko pod uwagę: samą pracę, jej warunki i zarobki"
+u8,"Na ile odpowiada praca, biorąc wszystko pod uwagę: samą pracę, jej warunki i zarobki"
+n11,"Na ile odpowiada praca, biorąc wszystko pod uwagę: samą pracę, jej warunki i zarobki"
+g8,Główna praca
+j1_01,Zadowolenie: Zarobki
+j1_02,Zadowolenie: Możliwości awansu
+j1_03,Zadowolenie: Relacje z przełożonymi
+j1_04,Zadowolenie: Kontakty ze współpracownikami
+j1_05,Zadowolenie: Pewność zatrudnienia
+j1_06,Zadowolenie: Możliwość rozwoju osobistego i podnoszenia umiejętności
+j1_07,Zadowolenie: Możliwość łączenia pracy z życiem osobistym i innymi obowiązkami
+j1_08,Zadowolenie: Możliwość wykazania się inicjatywą i samodzielnością
+j1_09,Zadowolenie: Warunki wykonywania pracy
+j1_10,"Zadowolenie: Z tego, co robi w pracy"
+j3_01,Mam możliwość realizacji swoich własnych pomysłów
+j3_02,"Czuję, że praca którą wykonuję, ma sens"
+j3_03,Z chęcią zmieniłbym swoją pracę
+j3_04,W pracy muszę ciągle uczyć się nowych rzeczy
+j3_05,"Czuję, że w pracy wykorzystuję swoją wiedzę i umiejętności"
+j3_06,"Często muszę wykonywać zadania, które są zbyt proste w stosunku do moich umiejętności"
+j3_07,"Czasem muszę wykonywać zadania, które są zbyt trudne w stosunku do moich umiejętności"
+j3_08,W moim miejscu pracy panuje dobra atmosfera
+j3_09,"W pracy zdarza mi się padać ofiarą złośliwości i zaczepek, które sprawiają mi przykrość"
+j3_10,"Mam zbyt dużo zadań, by dobrze wykonać je na czas"
+j3_11,W mojej pracy zdarzają się sytuacje grożące uszczerbkiem na zdrowiu
+j3_12,"Czuję, że praca ma negatywny wpływ na moje zdrowie"
+j3_13,"Moja praca uniemożliwia mi poświęcenie bliskim tyle czasu, ile bym chciał"
+o1_1,"MIN Najniższa miesięczna pensja netto, za którą podjąłby pracę"
+o1_2,MID Pensja miesięczna netto uznana za w miarę zadowalającą
+o1_3,MAX Pensja miesięczna netto uznana za bardzo zadowalającą
+m9d,Przeciętne miesięczne zarobki netto w ost. 12m - dokładne (uwzgl. dane przedziałowe)
+m9_13k,Przeciętne miesięczne zarobki netto w ost. 12m - przedział (uwzgl. dane dokładne)
+m13,Przy aktualnym dochodzie gosp. domowego związanie końca z końcem jest…
