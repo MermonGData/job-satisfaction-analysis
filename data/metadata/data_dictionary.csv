@@ -1,16 +1,15 @@
 Column,Description
 id,Unikalny identyfikator respondenta w bazie łączonej
-woj,Województwo (symbol terytorialny TERC)
-m1,Rok urodzenia respondenta
 wiek,Wiek
+m1,Rok urodzenia respondenta
+woj,Województwo (symbol terytorialny TERC)
 m2,Płeć respondenta
+g8,Główna praca
 wykszt_7k,Wykształcenie ukończone (6 kat)
 p8,"Na ile odpowiada praca, biorąc wszystko pod uwagę: samą pracę, jej warunki i zarobki"
 e17,"Na ile odpowiada praca, biorąc wszystko pod uwagę: samą pracę, jej warunki i zarobki"
 u8,"Na ile odpowiada praca, biorąc wszystko pod uwagę: samą pracę, jej warunki i zarobki"
 n11,"Na ile odpowiada praca, biorąc wszystko pod uwagę: samą pracę, jej warunki i zarobki"
-g8,Główna praca
-j1_01,Zadowolenie: Zarobki
 j1_02,Zadowolenie: Możliwości awansu
 j1_03,Zadowolenie: Relacje z przełożonymi
 j1_04,Zadowolenie: Kontakty ze współpracownikami
@@ -33,9 +32,10 @@ j3_10,"Mam zbyt dużo zadań, by dobrze wykonać je na czas"
 j3_11,W mojej pracy zdarzają się sytuacje grożące uszczerbkiem na zdrowiu
 j3_12,"Czuję, że praca ma negatywny wpływ na moje zdrowie"
 j3_13,"Moja praca uniemożliwia mi poświęcenie bliskim tyle czasu, ile bym chciał"
+m9_13k,Przeciętne miesięczne zarobki netto w ost. 12m - przedział (uwzgl. dane dokładne)
+m9d,Przeciętne miesięczne zarobki netto w ost. 12m - dokładne (uwzgl. dane przedziałowe)
+m13,Przy aktualnym dochodzie gosp. domowego związanie końca z końcem jest…
 o1_1,"MIN Najniższa miesięczna pensja netto, za którą podjąłby pracę"
 o1_2,MID Pensja miesięczna netto uznana za w miarę zadowalającą
 o1_3,MAX Pensja miesięczna netto uznana za bardzo zadowalającą
-m9d,Przeciętne miesięczne zarobki netto w ost. 12m - dokładne (uwzgl. dane przedziałowe)
-m9_13k,Przeciętne miesięczne zarobki netto w ost. 12m - przedział (uwzgl. dane dokładne)
-m13,Przy aktualnym dochodzie gosp. domowego związanie końca z końcem jest…
+j1_01,Zadowolenie: Zarobki
