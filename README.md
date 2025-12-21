@@ -27,7 +27,21 @@ Project Structure
 Current Status
 
 **Status:** Work in progress
-to do: 
+
+Completed:
+1. Split monolithic notebook into modular notebooks:
+01_data_cleaning.ipynb
+02_eda.ipynb
+03_modelling.ipynb
+04_advanced_analysis.ipynb (SHAP / clustering ready)
+
+2. Implemented data/ folder structure (raw/, processed/, metadata/) with privacy considerations
+3. Created utils/ folder with reusable functions (helpers.py, data_prep.py)
+4. Trained and saved final model (best_model.pkl)
+5. Improved code modularity and clarity in notebooks
+6. Ongoing / Next Steps:
+Refining plots and visualizations for readability and consistency
+Finalizing README documentation to reflect current workflow and insights
 
 ---
 Data
@@ -35,11 +49,15 @@ Data
 - **Source:** Biuro Kapitału Ludzkiego survey data (Poland)
 - **Scope:** Employed individuals (excluding agricultural and self-employed respondents)
 - **Type:** Self-reported survey responses
+- **Privacy:** Dataset not included in repo; only processed model and code are shared
 - **Limitation:** Self-reporting bias and incomplete responses
+
 ---
 Methods & Tools
 
-TBD
+- Python (pandas, numpy, scikit-learn, matplotlib, seaborn, joblib)
+- Modular notebook workflow (01_data_cleaning → 02_eda → 03_modelling → 04_advanced_analysis)
+- SHAP / clustering analysis for model interpretability
 
 ---
 
@@ -50,18 +68,10 @@ TBD
 ---
 
 Next Steps
-
-Next steps focus on:
-- Refining existing variables and model specification  
+- Refine visualizations for clarity and consistency
 - Improving interpretability and communication of findings  
-- Documenting assumptions and uncertainty transparently  
-
-These limitations do not invalidate the results, but outline their **scope and reliability**.
-
-- Fix known modelling flaw  
-- Improve visual presentation of results  
-- Split the notebook for readability  
-- Add dashboard (Power BI or Plotly Dash prototype)  
+- Complete final README documentation and project narrative
+- Optional: future dashboard or interactive results outside GitHub
 - Prepare for public release  
 
 ---

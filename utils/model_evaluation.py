@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import viz_style as vs
 from sklearn.metrics import mean_absolute_error, root_mean_squared_error, r2_score
 
 
@@ -35,6 +36,9 @@ def evaluate_regression_metrics_df(y_true, y_pred, warn=True):
     return df.round(4)
 
 def plot_residuals(y_true, y_pred):
+    vs.set_base_style()
+    s = vs.RESIDUAL_STYLE
+    
     y_true = np.array(y_true)
     y_pred = np.array(y_pred)
 
@@ -42,8 +46,19 @@ def plot_residuals(y_true, y_pred):
 
     # Histogram
     plt.figure(figsize=(6, 4))
-    sns.histplot(residuals, kde=True, bins=30, color='steelblue')
-    plt.axvline(0, color='red', linestyle='--', linewidth=1)
+    sns.histplot(
+        residuals,
+        bins=s["bins"],
+        kde=True,
+        color=s["hist_color"],
+        alpha=0.8
+    )    
+    plt.axvline(
+        0,
+        color=s["zero_line_color"],
+        linestyle=s["zero_line_style"],
+        linewidth=s["zero_line_width"]
+    )
     plt.title("Residuals Distribution")
     plt.xlabel("Residual")
     plt.ylabel("Count")
@@ -51,17 +66,37 @@ def plot_residuals(y_true, y_pred):
     plt.show()
 
 def plot_residuals_vs_fitted(model, X_test, y_true, title="Residuals vs Fitted"):
+    vs.set_base_style()
+    s = vs.RESIDUAL_STYLE
+
     y_pred = model.predict(X_test)
     residuals = y_true - y_pred
     
-    plt.scatter(y_pred, residuals, alpha=0.6, edgecolor='k')
-    plt.axhline(0, color='red', linestyle='--', linewidth=1)
+    plt.scatter(
+        y_pred,
+        residuals,
+        alpha=s["alpha"],
+        s=s["marker_size"],
+        edgecolor=s["edgecolor"],
+        color=s["scatter_color"]
+    )
+    plt.axhline(
+        0,
+        color=s["zero_line_color"],
+        linestyle=s["zero_line_style"],
+        linewidth=s["zero_line_width"]
+    )
     plt.xlabel("Fitted values (Predicted satisfaction)")
     plt.ylabel("Residuals")
     plt.title(title)
+    plt.tight_layout()
+    plt.show()
 
 def plot_residuals_grid(trained_models_dict, comparison_df, dataset_name, y_test, 
                         n_models=4, figsize=(14, 10)):
+    vs.set_base_style()
+    s = vs.RESIDUAL_STYLE
+
     #Create a grid of residual plots for top models in a specific dataset
     dataset_models = comparison_df[comparison_df["Dataset"] == dataset_name].head(n_models)
 
@@ -94,11 +129,23 @@ def plot_residuals_grid(trained_models_dict, comparison_df, dataset_name, y_test
         
         residuals = y_test.values - y_pred
         
-        ax.scatter(y_pred, residuals, alpha=0.6, edgecolor='k', s=50)
-        ax.axhline(0, color='red', linestyle='--', linewidth=2)
-        ax.set_xlabel("Fitted values", fontsize=11)
-        ax.set_ylabel("Residuals", fontsize=11)
-        ax.set_title(f"{model_name}\n({dataset_name})", fontsize=12, fontweight='bold')
+        ax.scatter(
+        y_pred,
+        residuals,
+        alpha=s["alpha"],
+        s=s["marker_size"],
+        edgecolor=s["edgecolor"],
+        color=s["scatter_color"]
+    )
+        ax.axhline(
+        0,
+        color=s["zero_line_color"],
+        linestyle=s["zero_line_style"],
+        linewidth=s["zero_line_width"]
+    )
+        ax.set_xlabel("Fitted values")
+        ax.set_ylabel("Residuals")
+        ax.set_title(f"{model_name} ({dataset_name})")
         
         r2 = r2_score(y_test, y_pred)
         rmse = np.sqrt(np.mean(residuals**2))
