@@ -13,6 +13,16 @@ RESIDUAL_STYLE = {
     "bins": 30,
 }
 
+CLUSTER_COLORS = {
+    0: "#1f77b4",  # blue
+    1: "#ff7f0e",  # orange
+    2: "#2ca02c",  # green
+    3: "#d62728",  # red
+    4: "#9467bd",  # purple
+    5: "#8c564b",  # brown
+    6: "#e377c2",  # pink
+}
+
 def set_base_style():
     sns.set_theme(
         style="whitegrid",
