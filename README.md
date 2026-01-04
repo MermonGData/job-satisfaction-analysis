@@ -19,7 +19,7 @@ Excluded groups:
 2. Assess how different satisfaction components (e.g., pay, work-life balance, management) contribute  
 3. Explore differences between groups of employees using clustering  
 4. Interpret results through explainable ML methods (e.g., SHAP)
-
+S
 ---
 ## Objectives vs. Methods
 
@@ -127,7 +127,6 @@ Key components implemented:
 - Initial EDA, modelling, SHAP, and clustering analyses
 
 **Remaining Work / Next Steps**:
-- README polish – improve formatting, fill in limitations and key insights.
 - Review Notebook 01 clarity and consistency
 - Visualizations – refine plots for readability and consistency.
 - Code review / final polish – especially for utilities and helper functions.
