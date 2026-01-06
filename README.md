@@ -38,7 +38,6 @@ S
 - `01_preprocessing_and_integrated_eda.ipynb` – data cleaning, preprocessing, and exploratory data analysis
 - `02_modelling.ipynb` – model training, evaluation, and baseline predictions
 - `03_advanced_analysis.ipynb` – SHAP interpretation, clustering, and advanced analyses
-- `project_master.ipynb` – optional master notebook combining workflow and summaries
 
 ### Data (`data/`)
 - `raw/` – original survey files (not included in repo, only `.gitkeep` placeholder)

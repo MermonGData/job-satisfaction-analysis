@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import viz_style as vs
+from utils import viz_style
 from sklearn.metrics import mean_absolute_error, root_mean_squared_error, r2_score
 
 
@@ -36,8 +36,8 @@ def evaluate_regression_metrics_df(y_true, y_pred, warn=True):
     return df.round(4)
 
 def plot_residuals(y_true, y_pred):
-    vs.set_base_style()
-    s = vs.RESIDUAL_STYLE
+    viz_style.set_base_style()
+    s = viz_style.RESIDUAL_STYLE
     
     y_true = np.array(y_true)
     y_pred = np.array(y_pred)
@@ -66,8 +66,8 @@ def plot_residuals(y_true, y_pred):
     plt.show()
 
 def plot_residuals_vs_fitted(model, X_test, y_true, title="Residuals vs Fitted"):
-    vs.set_base_style()
-    s = vs.RESIDUAL_STYLE
+    viz_style.set_base_style()
+    s = viz_style.RESIDUAL_STYLE
 
     y_pred = model.predict(X_test)
     residuals = y_true - y_pred
@@ -94,8 +94,8 @@ def plot_residuals_vs_fitted(model, X_test, y_true, title="Residuals vs Fitted")
 
 def plot_residuals_grid(trained_models_dict, comparison_df, dataset_name, y_test, 
                         n_models=4, figsize=(14, 10)):
-    vs.set_base_style()
-    s = vs.RESIDUAL_STYLE
+    viz_style.set_base_style()
+    s = viz_style.RESIDUAL_STYLE
 
     #Create a grid of residual plots for top models in a specific dataset
     dataset_models = comparison_df[comparison_df["Dataset"] == dataset_name].head(n_models)
