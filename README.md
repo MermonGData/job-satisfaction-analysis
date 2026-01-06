@@ -19,7 +19,7 @@ Excluded groups:
 2. Assess how different satisfaction components (e.g., pay, work-life balance, management) contribute  
 3. Explore differences between groups of employees using clustering  
 4. Interpret results through explainable ML methods (e.g., SHAP)
-S
+
 ---
 ## Objectives vs. Methods
 
@@ -68,7 +68,7 @@ S
 ## Methods & Tools
 
 - Python (pandas, numpy, scikit-learn, matplotlib, seaborn, joblib)
-- Modular notebook workflow (01_data_cleaning → 02_eda → 03_modelling → 04_advanced_analysis)
+- Modular notebook workflow (01_preprocessing_and_intergrated_eda → 02_modelling → 03_advanced_analysis)
 - SHAP / clustering analysis for model interpretability
 
 ---
@@ -121,7 +121,7 @@ Project is mostly complete.
 Key components implemented:
 - Modular notebook workflow (01_data_cleaning → 04_advanced_analysis)
 - Data folder structure with privacy considerations
-- Utilities (helpers.py, data_prep.py)
+- Utilities (utils folder)
 - Final trained model (best_model.pkl)
 - Initial EDA, modelling, SHAP, and clustering analyses
 
