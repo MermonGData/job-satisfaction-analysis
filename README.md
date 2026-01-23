@@ -49,8 +49,8 @@ Excluded groups:
 - Other `.pkl` files – intermediate train/test splits and scaled features
 
 ### Utilities (`utils/`)
-- `data_loading.py` – functions for loading and preprocessing data
-- `model_evaluation.py` – functions for evaluating model performance
+- `data_io.py` – functions for loading data
+- `evaluation.py` – functions for evaluating model performance
 - `notebook_setup.py` – common notebook setup routines
 - `viz_style.py` – visualization styling functions
 - `__init__.py` – package initializer
@@ -127,9 +127,9 @@ Key components implemented:
 
 **Remaining Work / Next Steps**:
 - Review Notebook 01 clarity and consistency
-- Visualizations – refine plots for readability and consistency.
-- Code review / final polish – especially for utilities and helper functions.
-- Presentation & formatting – ensure notebooks and outputs are clean, clear, and well-documented.
+- Refine plots for readability and consistency.
+- Code review / final polish - especially for utilities and helper functions.
+- Presentation & formatting: ensure notebooks and outputs are clean, clear, and well-documented.
 - Assess potential sampling biases
 - Unify Markdown and code comment style across notebooks and README for consistency and readability
 - Optional: publishing a dashboard or interactive results outside GitHub
