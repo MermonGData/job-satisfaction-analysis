@@ -3,45 +3,53 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from utils import viz_style
-from sklearn.metrics import mean_absolute_error, root_mean_squared_error, r2_score
+from sklearn.metrics import mean_absolute_error, mean_squared_error, root_mean_squared_error, r2_score
 
 
 def evaluate_regression_metrics_df(y_true, y_pred, warn=True):
-    y_true = np.array(y_true)
-    y_pred = np.array(y_pred)
+    y_true = np.array(y_true).flatten()
+    y_pred = np.array(y_pred).flatten()
 
-    diffs = y_true - y_pred
-    abs_diffs = np.abs(diffs)
-    pct_diffs = abs_diffs / np.maximum(np.abs(y_true), 1e-8)
-    pct_diff_squared = ((diffs / np.maximum(np.abs(y_true), 1e-8)) ** 2)
-
-    if warn and np.any(np.abs(y_true) < 1e-6):
+    # Safety check for percentage metrics
+    epsilon = 1e-8
+    near_zero = np.abs(y_true) < 1e-6
+    if warn and np.any(near_zero):
         print("Warning: `y_true` contains near-zero values - MAPE and RMSPE may be unstable.")
 
-    mse = root_mean_squared_error(y_true, y_pred)
+    # Calculations
+    mse = mean_squared_error(y_true, y_pred)
+    rmse = root_mean_squared_error(y_true, y_pred)
     mae = mean_absolute_error(y_true, y_pred)
-    rmse = np.sqrt(mse)
+    
+    # Percentage errors
+    pct_diffs = np.abs(y_true - y_pred) / np.maximum(np.abs(y_true), epsilon)
+    mape = np.mean(pct_diffs) * 100
+    rmspe = np.sqrt(np.mean(pct_diffs**2)) * 100
+
+    # Correlation (Handling zero-variance edge cases)
+    try:
+        pearson = np.corrcoef(y_true, y_pred)[0, 1]
+    except:
+        pearson = np.nan
 
     metrics = {
         "MSE": mse,
         "RMSE": rmse,
-        "RMSPE [%]": np.sqrt(np.mean(pct_diff_squared)) * 100,
         "MAE": mae,
-        "MAPE [%]": np.mean(pct_diffs) * 100, 
+        "MAPE [%]": mape,
+        "RMSPE [%]": rmspe,
         "R²": r2_score(y_true, y_pred),
-        "Korelacja Pearsona": np.corrcoef(y_true, y_pred)[0, 1]
+        "Pearson correlation": pearson
     }
 
-    df = pd.DataFrame(list(metrics.items()), columns=["Metric", "Value"])
-    return df.round(4)
+    return pd.DataFrame(list(metrics.items()), columns=["Metric", "Value"]).round(4)
 
-def plot_residuals(y_true, y_pred):
+def plot_residuals(y_true, y_pred, title="Residuals Distribution"):
     viz_style.set_base_style()
     s = viz_style.RESIDUAL_STYLE
     
-    y_true = np.array(y_true)
-    y_pred = np.array(y_pred)
-
+    y_true = np.asarray(y_true)
+    y_pred = np.asarray(y_pred)
     residuals = y_true - y_pred
 
     # Histogram
@@ -53,13 +61,15 @@ def plot_residuals(y_true, y_pred):
         color=s["hist_color"],
         alpha=0.8
     )    
+
     plt.axvline(
         0,
         color=s["zero_line_color"],
         linestyle=s["zero_line_style"],
         linewidth=s["zero_line_width"]
     )
-    plt.title("Residuals Distribution")
+
+    plt.title(title)
     plt.xlabel("Residual")
     plt.ylabel("Count")
     plt.tight_layout()
@@ -80,13 +90,15 @@ def plot_residuals_vs_fitted(model, X_test, y_true, title="Residuals vs Fitted")
         edgecolor=s["edgecolor"],
         color=s["scatter_color"]
     )
+
     plt.axhline(
         0,
         color=s["zero_line_color"],
         linestyle=s["zero_line_style"],
         linewidth=s["zero_line_width"]
     )
-    plt.xlabel("Fitted values (Predicted satisfaction)")
+
+    plt.xlabel("Fitted values")
     plt.ylabel("Residuals")
     plt.title(title)
     plt.tight_layout()
@@ -99,18 +111,11 @@ def plot_residuals_grid(trained_models_dict, comparison_df, dataset_name, y_test
 
     #Create a grid of residual plots for top models in a specific dataset
     dataset_models = comparison_df[comparison_df["Dataset"] == dataset_name].head(n_models)
-
     models_dict = trained_models_dict[dataset_name]
     
-    n_rows = int(np.ceil(n_models / 2))
-    n_cols = 2 if n_models > 1 else 1
-    fig, axes = plt.subplots(n_rows, n_cols, figsize=figsize)
-    
-    #Flattening axes
-    if n_models > 1:
-        axes = axes.flatten()
-    else:
-        axes = [axes]
+    n_rows = int(np.ceil(len(dataset_models) / 2))
+    fig, axes = plt.subplots(n_rows, 2, figsize=figsize)
+    axes = axes.flatten()
     
     for i in range(len(dataset_models), len(axes)):
         axes[i].set_visible(False)
