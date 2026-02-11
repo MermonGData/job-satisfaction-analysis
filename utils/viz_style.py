@@ -21,6 +21,7 @@ CLUSTER_COLORS = {
     4: "#9467bd",  # purple
     5: "#8c564b",  # brown
     6: "#e377c2",  # pink
+    7: "#7f7f7f",  # gray
 }
 
 def set_base_style():
