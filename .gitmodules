@@ -1,0 +1,3 @@
+[submodule "ml_core_utils"]
+	path = ml_core_utils
+	url = https://github.com/MermonGData/ml_core_utils.git
